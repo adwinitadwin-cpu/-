@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ТВОЙ_GITHUB_НИК/ИМЯ_РЕПОЗИТОРИЯ
+  repo: https://adwinitadwin-cpu.github.io/-/
   branch: main
 
 media_folder: "images/uploads"
