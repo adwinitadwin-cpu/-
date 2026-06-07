@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: ТВОЙ_GITHUB_НИК/ИМЯ_РЕПОЗИТОРИЯ
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "catalog"
+    label: "Каталог Товарів"
+    folder: "data"
+    extension: "json"
+    file: "products.json"
+    create: true
+    slug: "{{fields.id}}"
+    fields:
+      - {label: "Список Товарів", name: "products", widget: "list", fields: [
+          {label: "Унікальний ID (цифра)", name: "id", widget: "string"},
+          {label: "Назва товару", name: "name", widget: "string"},
+          {label: "Ціна (грн)", name: "price", widget: "number", value_type: "int"},
+          {label: "Фото товару", name: "img", widget: "image"}
+        ]}
